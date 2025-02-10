@@ -1,0 +1,173 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgray;
+  z-index: 100;
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.search-bar{
+  width: 0;
+  flex:2;
+  height: 37px;
+  padding-left: 16px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 2px;
+  box-shadow:inset 1px 2px 3px rgba(0, 0, 0, 0.05)
+}
+.search-button .tooltip,.mic .tooltip,.notification-icon-box .tooltip,.yt-tooltip .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  bottom:-28px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button,
+.mic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-button:hover .tooltip,
+.mic:hover .tooltip,
+.notification-icon-box:hover .tooltip,
+.yt-tooltip:hover .tooltip{
+  opacity: 1;
+}
+
+.search-bar::placeholder{
+  font-size:17px;
+}
+.middle-section{
+  display: flex;
+  flex:1;
+  margin-left: 72px;
+  margin-right: -10px;
+  max-width: 650px;
+  align-items: center;
+}
+.right-section{
+  flex-shrink: 0;
+  margin-right: 30px;
+  display: flex;
+  margin-left: 15px;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger-logo{
+  height: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.youtube-logo{
+  height:22px;
+}
+.search-button{
+  height: 41px;
+  border-radius: 2px;
+  border: none;
+  width: 66px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  margin-left: -2px;
+  margin-right: 10px;
+ 
+}
+.search-icon{ 
+  height:25px;
+}
+.mic{
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245,245,245);
+}
+.mic-icon{
+  height: 26px;
+}
+.create-button{
+  display: flex;
+  height: 38px;
+  border: none;
+  width: 100px;
+  border-radius: 20px;
+  padding-left: 4px;
+}
+.create-text{
+  font-family: Arial;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight:600;
+  text-align: center;
+}
+.create-button-icon{
+  display: flex;
+  margin-top: 6px;
+  padding-bottom: 0px;
+  width: 30px;
+  height: 25px;
+  margin-left: 4px;
+  margin-bottom: 0px;
+}
+.create-icon{
+  width: 35px;
+}
+.button-div{
+  display:flex;
+  width: 105px;
+  height: 40px;
+}
+.notification-icon{
+  height: 25px;
+  margin-left: 0px;
+}
+.my-profile{
+  height: 35px;
+  margin-left: 20px;
+  border-radius: 17px;
+}
+.notification-icon-box{
+  position: relative;
+}
+.notification-count{
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  background-color: rgb(219, 12, 12);
+  color: white;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+}

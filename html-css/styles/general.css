@@ -1,0 +1,13 @@
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+     /*font stack:- if 1st fails due to any reason then second will work*/
+}
+body{
+  font-family: Roboto,Arial;/*font stack:- if 1st fails due to any reason then second will work*/
+  margin-left: 20px;
+  padding-top: 70px;
+  padding-left: 230px;
+  padding-right: 15px;
+  background-color: rgb(247, 245, 245);
+}
