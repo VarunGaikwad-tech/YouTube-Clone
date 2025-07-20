@@ -1,0 +1,1 @@
+A responsive clone of YouTube's user interface built using **HTML** and **CSS**. This project replicates the layout and visual components of YouTube's homepage, including the header, sidebar, and video grid.
